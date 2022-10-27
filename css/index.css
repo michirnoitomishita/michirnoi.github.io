@@ -1,4 +1,5 @@
-body {
+@media screen and (max-width: 480px)
+{body {
     font-size: 16px;
     text-align: center;
     width: 960px;
@@ -6,7 +7,7 @@ body {
     max-width: 100%;
 
 }
-
+}
 /*ーーーーーーーーーーー*/
 /*main*/
 /*ーーーーーーーーーーー*/
