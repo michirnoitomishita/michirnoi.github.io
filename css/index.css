@@ -3,6 +3,7 @@ body {
     text-align: center;
     width: 960px;
     font-family: serif;
+    max-width: 100%;
 
 }
 
