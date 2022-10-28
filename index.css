@@ -3,6 +3,7 @@ body {
     text-align: center;
     width: 960px;
     font-family: serif;
+    max-width: 100%;
 
 }
 
@@ -137,13 +138,52 @@ h1 {
 
 .news_text_02 {
     width: fit-content;
+    margin: 30px 0 0 0;
 }
+
+.slider {
+    width: 300px;
+    height: 200px;
+    overflow: hidden;
+    margin: 0 auto;
+
+}
+
+.slider-item {
+    width: 300px;
+    float: left;
+}
+
+
+.slider-inner {
+    width: 300%;
+    animation: slider 10s infinite ease;
+}
+
+@keyframes slider {
+    0% {
+        transform: translateX(0);
+    }
+
+    33% {
+        transform: translateX(-300px);
+    }
+
+    66% {
+        transform: translateX(-600px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
 
 /*ーーーーーーーーーーー*/
 /*about*/
 /*ーーーーーーーーーーー*/
 h2 {
-    margin: 64px 0px 20px 0px;
+    margin: 100px 0px 20px 0px;
     font-size: 24px;
 }
 
@@ -157,8 +197,16 @@ h2 {
     writing-mode: vertical-rl;
     text-align: justify;
     margin: 20px 0px 0px 40px;
-
 }
+
+/*ーーーーーーーーーーー*/
+/*Movie*/
+/*ーーーーーーーーーーー*/
+
+.Movie-movie {
+    margin: 30px 0 100px 0;
+}
+
 
 /*ーーーーーーーーーーー*/
 /*kodawari*/
@@ -290,28 +338,175 @@ h4 {
     align-items: center;
 }
 
+.shop_honten_img {
+    border: 1px solid #ddd;
+    width: 300px;
+    height: 226px;
+    margin: 0 auto;
+    overflow: hidden;
+    background: #000;
+}
+
+.shop_honten_img {
+    width: 100%;
+    cursor: pointer;
+    transition-duration: 0.3s;
+}
+
+.shop_honten_img:hover img {
+    opacity: 0.6;
+    transition-duration: 0.3s;
+}
+
+
+
+.shop_chofu_img {
+    margin: 5px 0px 0px 0px;
+    border: 1px solid #ddd;
+    width: 300px;
+    height: 226px;
+    margin: 0 auto;
+    overflow: hidden;
+    background: #000;
+}
+
+.shop_chofu_img {
+    width: 100%;
+    cursor: pointer;
+    transition-duration: 0.3s;
+}
+
+.shop_chofu_img:hover img {
+    opacity: 0.6;
+    transition-duration: 0.3s;
+}
+
+.shop_ayaragi_img {
+    border: 1px solid #ddd;
+    width: 300px;
+    height: 226px;
+    margin: 0 auto;
+    overflow: hidden;
+    background: #000;
+}
+
+.shop_ayaragi_img {
+    width: 100%;
+    cursor: pointer;
+    transition-duration: 0.3s;
+}
+
+.shop_ayaragi_img:hover img {
+    opacity: 0.6;
+    transition-duration: 0.3s;
+}
+
 
 .shop_06 {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 0 0 100px 0;
 }
 
+.shop_kokura_img {
+    border: 1px solid #ddd;
+    width: 300px;
+    height: 226px;
+    margin: 0 auto;
+    overflow: hidden;
+    background: #000;
+}
 
+.shop_kokura_img {
+    width: 100%;
+    cursor: pointer;
+    transition-duration: 0.3s;
+}
 
+.shop_kokura_img:hover img {
+    opacity: 0.6;
+    transition-duration: 0.3s;
+}
+
+.shop_jang_img {
+    border: 1px solid #ddd;
+    width: 300px;
+    height: 226px;
+    margin: 0 auto;
+    overflow: hidden;
+    background: #000;
+}
+
+.shop_jang_img {
+    width: 100%;
+    cursor: pointer;
+    transition-duration: 0.3s;
+}
+
+.shop_jang_img:hover img {
+    opacity: 0.6;
+    transition-duration: 0.3s;
+}
+
+.shop_meat_img {
+    border: 1px solid #ddd;
+    width: 300px;
+    height: 226px;
+    margin: 0 auto;
+    overflow: hidden;
+    background: #000;
+}
+
+.shop_meat_img {
+    width: 100%;
+    cursor: pointer;
+    transition-duration: 0.3s;
+}
+
+.shop_meat_img:hover img {
+    opacity: 0.6;
+    transition-duration: 0.3s;
+}
 
 /*ーーーーーーーーーーー*/
-/*info*/
+/*otoriyose*/
 /*ーーーーーーーーーーー*/
 h5 {
     font-size: 24px;
     width: 100%;
 }
 
+.takeout-image {
+    margin: 0 0 100px 0;
+}
+
+.takeout-image {
+
+    overflow: hidden;
+}
+
+.takeout-image img {
+    width: 100%;
+    cursor: pointer;
+    transition-duration: 0.3s;
+}
+
+.takeout-image:hover img {
+    opacity: 0.6;
+    transition-duration: 0.3s;
+}
+
+
+
+
 .tell {
     line-height: 150%
 }
 
+.tell_text {
+    margin: 0 0 100px 0;
+}
 
 .final_image {
     text-align: center;
@@ -339,7 +534,11 @@ h6 {
     margin: 0px 0px 80px 295px;
 }
 
-
 /*ーーーーーーーーーーー*/
 /*footer*/
 /*ーーーーーーーーーーー*/
+.footer-box {
+    height: 100px;
+    background-color: black;
+    color: white;
+}
